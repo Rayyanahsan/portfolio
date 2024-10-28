@@ -256,3 +256,30 @@ footer a:hover, footer a:focus {
         height: 100px;
     }
 }
+
+/* Container for Projects */
+.projects-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    align-items: stretch; /* Ensures all items have equal height */
+    margin-top: 20px;
+}
+
+/* Individual Project Card */
+.project {
+    flex: 1 1 300px; /* Adjust width as needed */
+    min-height: 250px; /* Ensures consistency across items */
+    padding: 20px;
+    background-color: #f9f9f9;
+    margin-bottom: 20px;
+    border-left: 4px solid #4CAF50;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 1.5s ease;
+}
+
+/* Ensures no spacing issues */
+.project:nth-child(3n) {
+    margin-right: 0;
+}
