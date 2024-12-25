@@ -3,49 +3,381 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> Tayyaba Sikandar's Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Rayyan Ahsan | Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha384-k6RqeWeci5ZR/Lv4MR0sA0FfDOMnS8T+6c4z8C7P1Ne5JbW6e2cETG9q6AFlH2" crossorigin="anonymous">
 </head>
 <body>
 
     <!-- Navigation Bar -->
-    <nav>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="portfolio.html">Portfolio</a></li>
-            <li><a href="contact.html">Contact</a></li>
-        </ul>
-    
+    <header>
+        <nav>
+            <div class="menu-icon">
+                <span>&#9776;</span> <!-- Hamburger Icon -->
+            </div>
+            <ul class="menu">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <script>
+        function toggleMenu() {
+            document.querySelector('.menu').classList.toggle('active');
+            document.querySelector('.menu-icon').classList.toggle('active');
+        }
+    </script>
+    Explanation
 
-    </nav>
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <h2>Hello, World.</h2>
+            <h1>I'm Rayyan Ahsan.</h1>
+            <div class="roles">
+                <span>Data Science Student | Python, Machine Learning & SQL Enthusiast | Web Developer (Flask, Streamlit) | Skilled in Data Analysis & Video Editing</span>
+            </div>
+            <a href="#about" class="more-btn">More About Me</a>
+            <div class="social-icons">
+                <a href="https://wa.me/923267477148" target="_blank" rel="noopener noreferrer">
+                    <i class="fab fa-whatsapp"></i>
+                </a>
+                <a href="https://github.com/Rayyanahsan" target="_blank" rel="noopener noreferrer">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/rayyan-ahsan-129495258/" target="_blank" rel="noopener noreferrer">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+    <!-- Cartoon Section -->
+    <section id="cartoon">
+        <h2 class="section-title">Meet Chatbot</h2>
+        <p>Click on ChatBot to make him say hi!</p>
+        <div class="character-container" onclick="alert('Hey there! Chatbot says hi! and for help 😸')">
+            <!-- Head -->
+            <div class="head">
+                <div class="ears">
+                    <div class="ear left"></div>
+                    <div class="ear right"></div>
+                </div>
+                <div class="face">
+                    <div class="eyes">
+                        <div class="eye left"></div>
+                        <div class="eye right"></div>
+                    </div>
+                    <div class="nose"></div>
+                    <div class="mouth">
+                        <div class="smile"></div>
+                    </div>
+                </div>
+            </div>
+            <!-- Body -->
+            <div class="body">
+                <div class="arms">
+                    <div class="arm left"></div>
+                    <div class="arm right"></div>
+                </div>
+                <div class="torso"></div>
+                <div class="legs">
+                    <div class="leg left"></div>
+                    <div class="leg right"></div>
+                </div>
+                <div class="tail"></div>
+            </div>
+        </div>
+    </section>
 
-    <!-- Main Content -->
-<section id="home" class="container">
-    <div class="intro-text">
-        <p class="iam">I am</p>
-        <h1>Tayyaba Sikandar</h1>
-        <p class="description">A highly motivated and hardworking individual, inspired by challenging problems.</p>
-        <a href="portfolio.html" class="btn">MY PROJECTS</a>
+    <!-- About Section -->
+    <section class="about-section" id="about">
+        <h2 class="section-title">Let me introduce myself.</h2>
+        <div class="about-content">
+            <div class="intro">
+                
+                <p class="description">
+                    I am a Data Science student at the University of Management and Technology (UMT) with a strong background in Python, machine learning, SQL, and data analysis tools. I completed an internship at Minexx, gaining practical experience in machine learning and SQL in real-world projects.
+                    <br><br>
+                    I have received certificates in competitions such as HRCA and Kangaroo and served as a class prefect. Additionally, I am skilled in animation and video editing, completing various creative projects. I am eager to contribute to data-driven projects, using my skills to solve complex challenges in data science.
+                </p>
+            </div>
+            <div class="info-sections">
+                <div class="profile">
+                    <h3>Profile</h3>
+                    <p><strong>Fullname:</strong> Rayyan Ahsan</p>
+                    <p><strong>Birth Date:</strong> November 9, 2003</p>
+                    <p><strong>Study:</strong> University of Management and Technology</p>
+                   
+                    <p><strong>Email:</strong> <a href="mailto:rayyanahsan7890@gmail.com">rayyanahsan7890@gmail.com</a></p>
+                </div>
+                <div class="skills">
+                    <h3>Skills</h3>
+                    <div class="skill-bar">
+                        <span>HTML</span>
+                        <div class="bar"><div class="progress html"></div></div>
+                    </div>
+                    <div class="skill-bar">
+                        <span>Machine Learning</span>
+                        <div class="bar"><div class="progress ml"></div></div>
+                    </div>
+                    <div class="skill-bar">
+                        <span>SQL</span>
+                        <div class="bar"><div class="progress sql"></div></div>
+                    </div>
+                    <div class="skill-bar">
+                        <span>Python</span>
+                        <div class="bar"><div class="progress python"></div></div>
+                    </div>
+                    <div class="skill-bar">
+                        <span>C++</span>
+                        <div class="bar"><div class="progress cpp"></div></div>
+                    </div>
+                    <div class="skill-bar">
+                        <span>Computer Vision</span>
+                        <div class="bar"><div class="progress cv"></div></div>
+                    </div>
+                </div>
+            </div>
+            <div class="buttons">
+                <a href="Rayyan Ahsan.pdf" class="btn" download>Download CV</a>
+                <button class="btn">Hire Me</button>
+            </div>
+        </div>
+    </section>
+    <section class="resume">
+        <h2>Work Experience</h2>
         
-        <!-- Contact Icons Only -->
-        <div class="contact-icons">
-            <a href="tel:+923267445"><i class="fas fa-phone"></i></a>
-            <a href="mailto:sikandarbhatti846@gmail.com><i class="fas fa-envelope"></i></a>
-            <a href="https://wa.me/+923267445"><i class="fab fa-whatsapp"></i></a>
+        <div class="timeline">
+            <div class="timeline-item">
+                <div class="timeline-icon"></div>
+                <div class="timeline-content">
+                    <h3>Intern</h3>
+                    <p><strong>Remote, London, United Kingdom</strong></p>
+                    <span class="date">July 2024 - October 2024</span>
+                    <p>Gained hands-on experience in machine learning and SQL, contributing to predictive models for price forecasting using Python. Developed interactive dashboards with Flask and Streamlit, and collaborated on data analysis tasks to support decision-making processes.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+           <!-- Education Section -->
+<section class="timeline-section">
+    <h2>Education</h2>
+    <div class="timeline">
+        <div class="timeline-item">
+            <div class="timeline-icon"></div>
+            <div class="timeline-content">
+                <h3>Bachelor of Science in Data Science (BSDS)</h3>
+                <p><strong>Institution:</strong> University of Management And Technology</p>
+                <span class="date">Start Date: 13 November 2022 - Ongoing</span>
+                <p><strong>Location:</strong> Lahore, Pakistan</p>
+                <p><strong>Website:</strong> <a href="https://www.umt.edu.pk" target="_blank">www.umt.edu.pk</a></p>
+                <p><strong>Final Grade:</strong> A</p>
+            </div>
         </div>
     </div>
-    
-   
 </section>
 
-    <!-- Footer -->
-    <footer>
-        <div class="footer-contact-icons"
-            <a href="mailto:sikandarbhatti846@gmail.com"><i class="fas fa-envelope"></i></a>
-    
+<!-- Certificates Section -->
+<section class="timeline-section">
+    <h2>Certificates</h2>
+    <div class="timeline">
+        <div class="timeline-item">
+            <div class="timeline-icon"></div>
+            <div class="timeline-content">
+                <h3>WWF Certification</h3>
+                <span class="date">12 July 2020 – 4 August 2020</span>
+                <p>Awarded by WWF for proficiency in environmental conservation, sustainable practices, and biodiversity preservation.</p>
+            </div>
         </div>
-    </footer>
+        <div class="timeline-item">
+            <div class="timeline-icon"></div>
+            <div class="timeline-content">
+                <h3>Alkhidmat Foundation Pakistan Plantation</h3>
+                <p>Recognized for participation in plantation efforts with Alkhidmat Foundation, supporting environmental conservation initiatives.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Language Skills Section -->
+<section class="timeline-section">
+    <h2>Language Skills</h2>
+    <div class="timeline">
+        <div class="timeline-item">
+            <div class="timeline-icon"></div>
+            <div class="timeline-content">
+                <h3>Languages</h3>
+                <p><strong>Mother Tongue(s):</strong>  Punjabi</p>
+                <p><strong>Other Languages:</strong> English, Urdu</p>
+            </div>
+        </div>
+    </div>
+</section>
+<section id="portfolio">
+    <div class="container">
+        <h2 class="section-title">Portfolio</h2>
+        <p class="section-subtitle">Explore some of the projects I've worked on in Python, machine learning, SQL, and more.</p>
+        
+        <div class="projects">
+            <!-- Hotel Management System Project -->
+            <div class="project">
+                <div class="project-overlay">
+                    <h3>Hotel Management System</h3>
+                    <p>Data Structures and Algorithms Project</p>
+                    <p>Date: 08/12/2023 – 08/01/2024</p>
+                    <a href="https://github.com/Rayyanahsan/Hotel-Management-System-" target="_blank" class="project-link">View on GitHub</a>
+                </div>
+                <img src="image/project11.jpg" alt="Hotel Management System Project">
+            </div>
+
+            <!-- Exponential Growth Model Project -->
+            <div class="project">
+                <div class="project-overlay">
+                    <h3>Exponential Growth Model Project</h3>
+                    <p>Machine Learning (Differential Equation)</p>
+                    <p>Date: 13 MAY 2024 – 10 JUN 2024</p>
+                    <a href="https://github.com/Rayyanahsan/Exponential_Growth_Model_Project_Resources-Differential-Equation-" target="_blank" class="project-link">View on GitHub</a>
+                </div>
+                <img src="image/project2.png" alt="Exponential Growth Model Project">
+            </div>
+
+            <!-- Database Management System Project -->
+            <div class="project">
+                <div class="project-overlay">
+                    <h3>Database Management System (Hotel Management System)</h3>
+                    <p>SQL</p>
+                    <p>Date: 28 MAY 2024 – 7 JUN 2024</p>
+                    <a href="https://github.com/Rayyanahsan/Database-Management-System-Hotel-Management-System-" target="_blank" class="project-link">View on GitHub</a>
+                </div>
+                <img src="image/project3.jpg" alt="Database Management System Project">
+            </div>
+
+            <!-- Grade Prediction Project -->
+            <div class="project">
+                <div class="project-overlay">
+                    <h3>Grade Prediction Project</h3>
+                    <p>Python</p>
+                    <p>Date: 15 DEC 2023 – 4 JAN 2024</p>
+                    <a href="https://github.com/Rayyanahsan/Project-IDS--final-Grade-Prediction-" target="_blank" class="project-link">View on GitHub</a>
+                </div>
+                <img src="image/project4.png" alt="Grade Prediction Project">
+            </div>
+
+            <!-- Tin Prices Prediction Project -->
+            <div class="project">
+                <div class="project-overlay">
+                    <h3>Tin Prices Prediction Project</h3>
+                    <p>Facebook Prophet Model</p>
+                    <p>Date: 22 JUL 2024 – 7 OCT 2024</p>
+                    <a href="https://github.com/Rayyanahsan/Internship-project-" target="_blank" class="project-link">View on GitHub</a>
+                </div>
+                <img src="image/project5.jpg" alt="Tin Prices Prediction Project">
+            </div>
+        </div>
+    </div>
+</section>
+
+
+    <head>
+        <!-- Add Font Awesome CDN for icons -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    </head>
+
+    
+        <!-- Services Section -->
+        <section id="services">
+            <h2 class="section-title">Services</h2>
+            <p class="section-subtitle">What I can do for you</p>
+            <div class="container">
+                <div class="service-cards">
+                    <!-- Service Card 1 -->
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-code"></i> <!-- Font Awesome icon for coding -->
+                        </div>
+                        <h3>Web Development</h3>
+                        <p>I build fast, responsive, and SEO-optimized websites tailored to your needs.</p>
+                    </div>
+    
+                    <!-- Service Card 2 -->
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-chart-line"></i> <!-- Font Awesome icon for data analysis -->
+                        </div>
+                        <h3>Data Analysis</h3>
+                        <p>Get insightful data analysis to drive informed decision-making in your business.</p>
+                    </div>
+    
+                    <!-- Service Card 3 -->
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-laptop-code"></i> <!-- Font Awesome icon for ML -->
+                        </div>
+                        <h3>Machine Learning</h3>
+                        <p>Develop smart machine learning solutions that offer predictive insights.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    
+        <div class="skills-section">
+            <div class="skill">
+                <i class="icon">&#x270E;</i> <!-- Pencil icon for Leadership Skills -->
+                <p class="score">100</p>
+                <p class="description">Leadership Skills</p>
+            </div>
+            <div class="skill">
+                <i class="icon">&#x1F465;</i> <!-- People icon for Work in Team -->
+                <p class="score">100</p>
+                <p class="description">Work in Team</p>
+            </div>
+            <div class="skill">
+                <i class="icon">&#x1F3C6;</i> <!-- Medal icon for Fast Learner -->
+                <p class="score">100</p>
+                <p class="description">Fast Learner</p>
+            </div>
+            <div class="skill">
+                <i class="icon">&#x1F4A1;</i> <!-- Light bulb icon for Communication Skills -->
+                <p class="score">100</p>
+                <p class="description">Communication Skills</p>
+            </div>
+            <div class="skill">
+                <i class="icon">&#x2615;</i> <!-- Coffee cup icon for Regularity -->
+                <p class="score">100</p>
+                <p class="description">Regularity</p>
+            </div>
+            <div class="skill">
+                <i class="icon">&#x23F3;</i> <!-- Clock icon for Availability -->
+                <p class="score">100</p>
+                <p class="description">Availability</p>
+            </div>
+        </div>
+    
+
+    <!-- Contact Section -->
+<section id="contact" class="dark-section">
+    <div class="container">
+        <h3>I'd Love To Hear From You.</h3>
+        <p>Feel free to contact me to discuss how my skills can contribute to your team.</p>
+        <a href="mailto:rayyanahsan7890@gmail.com" class="btn">Send Email</a>
+        <div class="contact-info">
+            <p><i class="fas fa-map-marker-alt"></i> University of Management and Technology, Lahore</p>
+            <p><i class="fas fa-envelope"></i> Email me at: <a href="mailto:rayyanahsan7890@gmail.com">rayyanahsan7890@gmail.com</a></p>
+            <p><i class="fab fa-linkedin"></i> Connect with me on <a href="https://www.linkedin.com/in/rayyan-ahsan-129495258/" target="_blank" rel="noopener noreferrer">LinkedIn</a></p>
+        </div>
+    </div>
+</section>
+<script>
+    function toggleMenu() {
+        document.querySelector('.menu').classList.toggle('active');
+    }
+</script>
+
 
 </body>
 </html>
